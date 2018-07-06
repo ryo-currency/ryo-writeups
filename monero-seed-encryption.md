@@ -16,7 +16,7 @@ Adding a random number which represents the password to the paintext compromises
 
 ### How can it be fixed?
 
-The problem is caused by shoehorning security into an old format - 25 word format does not have enough room to fit an IV. Encrypted seed should be extended by 6 words to include a 64-bit IV and a proper encryption algorithm should be used to protect it. Alternatively a GPG-like message format should replace words.
+The problem is caused by shoehorning security into an old format - 25 word format does not have enough room to fit an [initialization vector](https://en.wikipedia.org/wiki/Initialization_vector). Encrypted seed should be extended by 6 words to include a 64-bit IV and a proper encryption algorithm should be used to protect it. Alternatively a GPG-like message format should replace words.
 
 ### Why not report it though Monero’s VRP or HackerOne?
 
