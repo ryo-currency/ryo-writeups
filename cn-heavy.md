@@ -40,10 +40,6 @@ bit[5] ^= (bit[6] NOR bit[1]) XOR bit[6]
 bit[6] ^= (bit[5] XOR bit[1]) AND bit[5]
 ```
 
-Which can then be implemented in hardware as:
-
-<img src="http://pasteall.org/pic/show.php?id=8c9e9dd889fddb56a3cbdbe64b91871a">
-
 Yes. You got it. Monero's tweak will run faster on hardware than on software.
 
 **Cryptonite weakness**
